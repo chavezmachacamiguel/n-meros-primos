@@ -36,11 +36,11 @@ Una vulnerabilidad común ocurre cuando estos sistemas emplean patrones predecib
 * [cite_start]**CSS3:** Estilo de interfaz oscura y reglas responsivas avanzadas mediante *media queries*[cite: 21, 24].
 * [cite_start]**JavaScript (Vanilla JS):** Motor dinámico para procesamiento matemático y manipulación directa del DOM[cite: 21].
 * numeros primos/
-    ├── index.html           <-- Aplicación del problema "Números primos en códigos de acceso"
-    ├── README.md            <-- Teoría, contexto real y explicación del algoritmo de números primos
-    │
-    ├── css/
-    │   └── estilos.css      <-- Estilo visual único de terminal oscura con input numérico ampliado
-    │
-    └── js/
-        └── script-primos.js <-- Lógica de validación criptográfica basada en el conteo de divisores exactos
+*   ├── index.html
+*   |── README.md
+*   |
+*   |── css/
+*   |   └ ── estilos.css
+*   |
+*   └js/
+*     └─ script-primos.js 
