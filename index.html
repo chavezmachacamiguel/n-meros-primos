@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primalidad: Validación de Token Seguro</title>
+    <link rel="stylesheet" href="./css/stylo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Validador Criptográfico de Accesos</h1>
+        <p><strong>Temática:</strong> Seguridad Informática y Validación de Claves con Números Primos</p>
+        <p><strong>Estudiante:</strong> Miguel Felix Chavez Machaca</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Contexto del Problema</h2>
+            <p>En el mundo de la ciberseguridad, los números primos son los pilares fundamentales para algoritmos como RSA. El software moderno valida códigos de seguridad verificando si los tokens numéricos generados aleatoriamente son primos, haciendo que los sistemas de encriptación sean matemáticamente difíciles de romper por ciberataques de fuerza bruta.</p>
+        </section>
+
+        <section class="card">
+            <h2>Explicación del Algoritmo</h2>
+            <p>El código captura un número entero e inicializa un contador en cero. Mediante un ciclo estructurado desde el número 1 hasta el valor ingresado, evalúa cuántas veces el residuo de la división es exactamente cero. Si al finalizar el conteo se detecta que posee únicamente dos divisores, el sistema certifica el número como "Clave Segura".</p>
+        </section>
+
+        <section class="card">
+            <h2>Panel de Inspección de Token</h2>
+            <form id="formPrimos" onsubmit="event.preventDefault(); inspeccionarToken();">
+                <label for="tokenInput">Introduce el código numérico a verificar (Ejemplos primos: 13, 997, 5003, 7919):</label>
+                <input type="number" id="tokenInput" min="1" placeholder="Prueba con 997 o 7919" required>
+                <button type="submit">Testear Nivel de Seguridad</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Estado del Servidor de Seguridad</h2>
+            <div id="resultadoValidacion">Esperando token de autenticación en los campos superiores...</div>
+        </section>
+
+        <section class="card">
+            <h2>Conclusión</h2>
+            <p>La indivisibilidad de los números primos no es solo una curiosidad de la aritmética, sino una barrera lógica real. Utilizar estas propiedades nos permite automatizar filtros de seguridad que descartan de inmediato patrones previsibles o vulnerables dentro de nuestras bases de datos.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="#">Link al Repositorio</a> | <a href="#">Link a la Página Publicada</a></p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
